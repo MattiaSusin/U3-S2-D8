@@ -7,7 +7,7 @@ const ProfilePage = () => {
       <div className="container-fluid">
         <div className="navbar">
           <a href="./Page1.html">
-            <img src="./assets/netflix_logo.png" alt="Netflix Logo" width="150px" />
+            {/* <img src="./assets/netflix_logo.png" alt="Netflix Logo" width="150px" /> */}
           </a>
         </div>
       </div>

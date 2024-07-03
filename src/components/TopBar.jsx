@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { NavLink } from 'react-router-dom';
 
 const TopBar = () => {
   return (
@@ -16,11 +17,12 @@ const TopBar = () => {
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#week-deal">Tv Shows</Nav.Link>
-            <Nav.Link href="#welcome-summer">Movies</Nav.Link>
-            <Nav.Link href="#last-minute">Recently Added</Nav.Link>
-            <Nav.Link href="#testimonials">My List</Nav.Link>
+            <NavLink to="/" className="nav-link">Home</NavLink>
+            <NavLink to="/TvShows" className="nav-link">TvShows</NavLink>
+            <NavLink to="/ProfilePage" className="nav-link">MyProfile</NavLink>
+            {/* <NavLink to="/TvShows" className="nav-link">Movies</NavLink>
+            <NavLink to="/TvShows" className="nav-link">Recently Added</NavLink>
+            <NavLink to="/TvShows" className="nav-link">My List</NavLink> */}
           </Nav>
           <Nav className="ms-auto">
             <Nav.Link href="#">
@@ -57,7 +59,7 @@ const TopBar = () => {
                 menuVariant="dark"
                 className="custom-dropdown"
               >
-                <NavDropdown.Item href="#" >Edit</NavDropdown.Item>
+                <NavLink to="/ProfilePage" className="nav-link">MyProfile</NavLink>
                 <NavDropdown.Item href="#">Exit</NavDropdown.Item>
               </NavDropdown>
           </Nav>

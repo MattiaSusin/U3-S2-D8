@@ -9,7 +9,7 @@ import TvShows from "./components/TvShows";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark">
     <BrowserRouter>
       <TopBar/>
     <Routes>
