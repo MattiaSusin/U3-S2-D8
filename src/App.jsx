@@ -5,6 +5,7 @@ import ContentMain from "./components/ContentMain";
 import MyFooter from "./components/MyFooter";
 import ProfilePage from "./components/ProfilePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import TvShows from "./components/TvShows";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <TopBar/>
     <Routes>
       <Route path="/" element={<ContentMain/>}/>
+      <Route path="/TvShows" element={<TvShows/>}/>
       <Route path="/ProfilePage" element={<ProfilePage/>}/>
-      <MyFooter/> 
     </Routes>
+      <MyFooter/> 
   </BrowserRouter>
     </div>
   );

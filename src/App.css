@@ -1,42 +1,312 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* .App {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@keyframes logo-spin {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+body{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.imgFilm{
+  width: 50px ;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  width: 2000px;
+}
+
+.card-container .card {
+  flex: 0 0 auto;
+  margin-right: 16px;
+}
+
+.card-container .card img {
+  /* height: 100%;
+  width: 100%; */
+  object-fit: cover;
+}
+
+
+.cardImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardSolid{
+  border: none;
+  height: 306px;
+  width: 243px;
+}
+
+button,img{
+  cursor: pointer;
+}
+
+ */
+.card {
+  transition: transform .4s, box-shadow 0.3s;
+}
+
+#pFooter{
+
+  cursor: pointer;
+}
+
+#svg{
+  cursor: pointer;
+}
+
+#btnP2:hover{background-color: white;
+color: grey;}
+
+hr{
+  color: gray;
+}
+
+.baby{
+  translate: -14px 10px;
+  object-fit: cover;
+}
+.imgBaby{
+  object-fit: cover;
+}
+.pencil{
+ width: 16px;
+translate: 9px -20px;
+color: white;
+}
+
+svg path {
+  fill: white;
+}
+svg{
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: ""; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+
+input[type="checkbox"]{
+
+  margin-top: 15px;
+  margin-right: 15px;
+  transform: translate(20%, 28%);
+}
+
+svg{
+  cursor: pointer;
+}
+
+.st0 {  
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+#btnEdit{
+  width: 85px;
+}
+
+#btnEdit:hover{background-color: white;
+  color: grey;}
+
+  .btnMat{
+    background-color:#333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .btnMat:hover{
+    background-color: rgb(0, 0, 0);
+    color: grey;
+  }
+
+  .btnStrive:hover{
+    background-color: rgb(0, 0, 0);
+    color: grey;
+  }
+
+  .btnStrive{
+    background-color: #666666;
+  }
+
+
+  /* !RESPONSIVE PROFILE PAGE */
+/* ProfilePage.css */
+.bg-black {
+  background-color: black !important;
+}
+
+.netflix-logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto; 
+}
+
+.profile-container {
+  padding: 2rem;
+}
+
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 1rem !important;
+  }
+
+  .baby {
+    width: 100px !important;
+    display: block;
+    margin: 0 auto 1rem auto; 
+  }
+
+  .btnStrive, .btnMat {
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+    width: 100%; 
+  }
+
+  #btnEdit, #btnP2 {
+    font-size: 0.875rem !important;
+    padding: 0.25rem !important;
+    width: 100%; 
+  }
+
+  .netflix-logo {
+    width: 100px !important;
+  }
+
+  .pencil svg {
+    display: none !important;
+  }
+
+  .text-light {
+    font-size: 0.875rem !important;
+  }
+
+  .fs-1 {
+    font-size: 1.5rem !important;
+    text-align: center; 
+  }
+
+  .fs-3 {
+    font-size: 1.25rem !important;
+    text-align: center; 
+  }
+
+  .pt-3, .pb-2, .pt-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .mt-3, .my-4, .mt-5, .mb-4 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .dropdown-toggle {
+    width: 100% !important;
+  }
+
+  .container.row {
+    padding: 0 !important;
+    text-align: center; 
+  }
+
+  .d-flex.justify-content-around {
+    flex-direction: column !important;
+    align-items: center; 
+  }
+
+  .d-flex.justify-content-around button {
+    margin-bottom: 0.5rem !important;
+    width: 100% !important; 
   }
 }
 
-.card {
-  padding: 2em;
+@media (min-width: 576px) {
+  .profile-container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .d-flex.justify-content-around {
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+
+  .d-flex.justify-content-around button {
+    width: auto !important;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media (min-width: 768px) {
+  .profile-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile-container {
+    max-width: 1140px;
+  }
 }
